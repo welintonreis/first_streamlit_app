@@ -41,8 +41,8 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
 
-streamlit.text("Hello from Snowflake:")
-streamlit.text(my_data_row)
+#streamlit.text("Hello from Snowflake:")
+#streamlit.text(my_data_row)
 
 my_cur.execute("select * from fruit_load_list")
 streamlit.header("The fruit load list contains:")
